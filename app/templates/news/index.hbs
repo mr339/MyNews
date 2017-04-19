@@ -1,0 +1,33 @@
+<div class="container">
+ {{#link-to 'news.writeNews'}} <button class="btn btn-success" id="writenews">Write your own news!
+ </button>{{/link-to}}
+{{#each model as |news|}}
+ <div class="newsection">
+  <div class ="heading">{{#link-to 'details' news.id}}{{news.title}}{{/link-to}}</div>
+    <div class="row">
+      <div class ="col-lg-3">
+      <img class="image" src={{news.image}}>
+      <small class='post'>Posted by <span class="author">{{news.name}}</span>,
+      {{moment-from-now news.created interval=1000}}{{!-- {{moment-from-now (now)}} --}}
+      </small>
+      </div>
+      <div class ="col-lg-9" id="details">{{news.details}}</div>
+      {{#link-to 'details' news.id}}<button class="readMore">Read more&#62;&#62;</button>{{/link-to}}
+    </div><hr>
+  </div>
+  {{/each}}
+</div>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 text-center">
+    <div class="btn-group">
+    <button {{action 'prev'}} class="btn btn-info">&#60;&#60;prev</button>
+    <button {{action 'next'}} class="btn btn-info">next&#62;&#62;</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

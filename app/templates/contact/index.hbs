@@ -1,0 +1,49 @@
+<div class="jumbo">
+  <div class="contactPage">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2>Contact Us</h2>
+        <p>Feel free to contact us and give us your feedback.Any type of criticism is welcomed.<br>Click the button below to write to us.</p>
+        <p>
+          MyApp
+          <address>
+            Nepal<br>
+            Kathmandu
+          </address>
+          <a href="https://ekbana.com/">EKbana soln</a>
+        </p>
+       {{#link-to 'contact.form' class='button'}}
+          Contact Us
+        {{/link-to}}
+      </div>
+      <div class="col-lg-9">
+        <button class="contact" {{action 'hide'}}>Contacted Users</button>
+        <table class="table {{unless showContact 'hided'}}" id="tab">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Feedback</th>
+            </tr>
+          </thead>
+        {{#each model as |contact|}}
+          <tbody>
+            <tr>
+              <td>{{contact.name}}</td>
+              <td>{{contact.email}}</td>
+              <td>{{contact.feedback}}</td>
+              <button class="btn btn-danger" {{action "deleteContact" contact}}>Delete</button>
+            </tr>
+          </tbody>
+           {{/each}}
+          <div class="btn-group">
+          <button {{action 'prev'}} class="btn btn-info">&#60;&#60;prev</button>
+          <button {{action 'next'}} class="btn btn-info">next&#62;&#62;</button>
+          </div>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+

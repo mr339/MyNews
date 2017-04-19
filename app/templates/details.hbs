@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="detailSection">
+      <div class="detailHeading">{{model.title}}</div>
+      <small class='posts'>Posted by <span class="author">{{model.name}}</span>,{{moment-from-now model.created interval=1000}}</small><hr>
+      <div><img class="images" src={{model.image}}></div><hr>
+      <div class="newsDetails">{{model.details}}</div>
+        {{#link-to 'news'}}
+   <button class="back" id="backs">&#xab;Back To News</button>
+  {{/link-to}}
+  </div>
+
+</div>

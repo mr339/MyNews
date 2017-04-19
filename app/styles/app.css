@@ -1,0 +1,205 @@
+
+/*  NEWS FRONT PAGE CSS*/
+
+ .readMore{
+  border: none;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  text-decoration: underline;
+}
+
+.newsection{
+  position: relative;
+  top:10px;
+  left:-30px;
+  width: 1150px;
+  background-color:#f8d8d3;
+}
+
+.loading-container{
+  color : #e46855;
+}
+
+.loading{
+  position: relative;
+  left: 430px;
+  top: 95px;
+  font-size: 250%;
+
+}
+
+.image{
+  height:100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.heading{
+  color: #e46855;
+  font-size: 150%;
+  text-decoration: none;
+}
+
+#details {
+   position: relative;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   left:-15px;
+   line-height: 16px;     /* fallback */
+   max-height: 150px;      /* fallback */
+   -webkit-line-clamp: 5; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+
+.heading .muted{
+  font-size: 70%;
+}
+
+/*NEWS FRONT PAGE CSS ENDS HERE*/
+
+
+
+
+/*  DETAILS PAGE CSS*/
+
+
+.back{
+  color: #e46855;
+  font-size: 150%;
+  border: none;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.detailHeading{
+  font-family: "Times New Roman", Times, serif;
+  color: #e46855;
+  font-size: 339%;
+  padding-left: 15px;
+}
+
+.images{
+  height:500px;
+  width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+.posts{
+  padding-left: 18px;
+}
+
+.detailSection{
+  position: relative;
+  top:10px;
+  left:-30px;
+  background-color:#f8d8d3;
+  padding-left: 15px;
+}
+
+.author{
+  color: #0000cc;
+}
+
+.newsDetails{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+/* DETAILS PAGE CSS ENDS HERE*/
+
+
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.contactPage{
+   position: relative;
+  top:10px;
+  left:-30px;
+
+}
+
+.table{
+  position: relative;
+  top:10px;
+  left:70px;
+  background-color: #f8d8d3;
+  border-radius: 20px;
+
+}
+
+.heading,
+.row{
+  position: relative;
+  left:10px;
+}
+
+.name{
+  color: #0000cc;
+}
+
+table td {
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word; /* Renamed property in CSS3 draft spec ,used to break lines within table row*/
+}
+
+.row {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+body{
+   background : url('../assets/images/7.jpg');
+   background-size: cover;
+}
+
+.container{
+  padding-right: 10px;
+}
+
+.table.hided{
+  display: none;
+
+}
+
+.contact{
+  top: -50px;
+  left: 650px;
+  position:absolute;
+  color: #e46855;
+  font-size: 150%;
+  border: none;
+  background-color: Transparent;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+#writenews{
+  top: 30px;
+  right: 110px;
+  position:absolute;
+}
+
+#loader{
+  position: absolute;
+  left: 240px;
+  top: 400px;
+}
+
